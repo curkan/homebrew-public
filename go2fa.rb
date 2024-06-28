@@ -5,20 +5,20 @@
 class Go2fa < Formula
   desc ""
   homepage "https://github.com/curkan/homebrew-public"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/curkan/go2fa/releases/download/v0.1.4/go2fa_Darwin_x86_64.tar.gz"
-      sha256 "a532c1c67eaa28209643a5a8b1df6171052e7df40a9b2ba8106bf86b0444dbde"
+      url "https://github.com/curkan/go2fa/releases/download/v0.1.5/go2fa_Darwin_x86_64.tar.gz"
+      sha256 "2838c249cfeb201a46dcb7996e4962180efed90d3b78bfe6193b6eae9a30a062"
 
       def install
         bin.install "go2fa"
       end
     end
     on_arm do
-      url "https://github.com/curkan/go2fa/releases/download/v0.1.4/go2fa_Darwin_arm64.tar.gz"
-      sha256 "276ff9b010462c11c05990f7bc7768489dc3b8c5da38156a9912f1c417d9f61a"
+      url "https://github.com/curkan/go2fa/releases/download/v0.1.5/go2fa_Darwin_arm64.tar.gz"
+      sha256 "4aa542002eeeeaf71e8a3744d133c187b0584ef1197691e6c840ecec3452af63"
 
       def install
         bin.install "go2fa"
@@ -29,8 +29,8 @@ class Go2fa < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/curkan/go2fa/releases/download/v0.1.4/go2fa_Linux_x86_64.tar.gz"
-        sha256 "f391e487d206c58f500394760f0ea1990e564908cbc13c400e48d9384c25fca4"
+        url "https://github.com/curkan/go2fa/releases/download/v0.1.5/go2fa_Linux_x86_64.tar.gz"
+        sha256 "4a236b5fe8208fcf4374ea62713c47be7d337fa2c3c3df75213b15e854a8bd2f"
 
         def install
           bin.install "go2fa"
@@ -39,8 +39,8 @@ class Go2fa < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/curkan/go2fa/releases/download/v0.1.4/go2fa_Linux_arm64.tar.gz"
-        sha256 "484f1dc6bc74bbd3a49489d82695d201174e4c42162b20c5fed3f780ff066c09"
+        url "https://github.com/curkan/go2fa/releases/download/v0.1.5/go2fa_Linux_arm64.tar.gz"
+        sha256 "652aaeafac143e01cf7b0ab36a3b212b5cbd73b70526bc433e2572ddfb9870af"
 
         def install
           bin.install "go2fa"
