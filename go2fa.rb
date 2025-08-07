@@ -5,23 +5,23 @@
 class Go2fa < Formula
   desc ""
   homepage "https://github.com/curkan/homebrew-public"
-  version "2.3.2"
+  version "0.1.7"
 
   on_macos do
     on_intel do
-      url "https://github.com/curkan/go-tickets/releases/download/v2.3.2/gotickets_Darwin_x86_64.tar.gz"
-      sha256 "2bcdb712278ef8e611312e64d1ad2ad49e3367bc86443b2e0fc3d43fe5b681b0"
+      url "https://github.com/curkan/go2fa/releases/download/v0.1.7/go2fa_Darwin_x86_64.tar.gz"
+      sha256 "8807303516df3330733b36d3464f19712f4e5214204f9aa6e863ec1cb942fd6c"
 
       def install
-        bin.install "gotickets"
+        bin.install "go2fa"
       end
     end
     on_arm do
-      url "https://github.com/curkan/go-tickets/releases/download/v2.3.2/gotickets_Darwin_arm64.tar.gz"
-      sha256 "94ba13ff20089611133dc7585755ae79ed875f262b410bd27d2cb2682d340d35"
+      url "https://github.com/curkan/go2fa/releases/download/v0.1.7/go2fa_Darwin_arm64.tar.gz"
+      sha256 "a6f9b8bdf568d5490aace034c2636292e1a206a85ad0a61f126e8b06a73bb4e3"
 
       def install
-        bin.install "gotickets"
+        bin.install "go2fa"
       end
     end
   end
@@ -29,21 +29,21 @@ class Go2fa < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/curkan/go-tickets/releases/download/v2.3.2/gotickets_Linux_x86_64.tar.gz"
-        sha256 "4d8851b721cec82bd41a92dc25ada89545e58d021fde07c513e2b9d25ef13251"
+        url "https://github.com/curkan/go2fa/releases/download/v0.1.7/go2fa_Linux_x86_64.tar.gz"
+        sha256 "1a219130af22bb1f3aac32411f0b49f7af65a2501b3007eadd2f16e49d656dfd"
 
         def install
-          bin.install "gotickets"
+          bin.install "go2fa"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/curkan/go-tickets/releases/download/v2.3.2/gotickets_Linux_arm64.tar.gz"
-        sha256 "cf6233c0d1bb3a2e87389a58146f47a4e6c31a9862da8d5cf7d7bfea4c46d6b8"
+        url "https://github.com/curkan/go2fa/releases/download/v0.1.7/go2fa_Linux_arm64.tar.gz"
+        sha256 "d52a33ed8403a1f75d514bf2fa1892e01257269cfd8506107e25644596e6b57a"
 
         def install
-          bin.install "gotickets"
+          bin.install "go2fa"
         end
       end
     end
