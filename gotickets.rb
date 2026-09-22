@@ -5,20 +5,20 @@
 class Gotickets < Formula
   desc ""
   homepage "https://github.com/curkan/homebrew-public"
-  version "2.5.2"
+  version "2.6.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/curkan/go-tickets/releases/download/v2.5.2/gotickets_Darwin_x86_64.tar.gz"
-      sha256 "fdea4434685176cf2cfadb2a72c0f0fca1e95f6c6e08cf98d821b06f3dd8af98"
+      url "https://github.com/curkan/go-tickets/releases/download/v2.6.0/gotickets_Darwin_x86_64.tar.gz"
+      sha256 "bb6d7c59542937e3dab06f73a1f50d8e62ffd3b5b54d98722addf8111bc65d14"
 
       def install
         bin.install "gotickets"
       end
     end
     on_arm do
-      url "https://github.com/curkan/go-tickets/releases/download/v2.5.2/gotickets_Darwin_arm64.tar.gz"
-      sha256 "c0924ed0fef63e70ad60f339a702d2d46665f3f7212e76506fc1fdb18de70636"
+      url "https://github.com/curkan/go-tickets/releases/download/v2.6.0/gotickets_Darwin_arm64.tar.gz"
+      sha256 "db9570d05bcf12c773f675e10aa55f21e8118e006c66da59e07d1194dec82e93"
 
       def install
         bin.install "gotickets"
@@ -29,8 +29,8 @@ class Gotickets < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/curkan/go-tickets/releases/download/v2.5.2/gotickets_Linux_x86_64.tar.gz"
-        sha256 "3274484e112fb83bf011f474074684a3a3ce7e34f0f9260cc2d5873a285a7260"
+        url "https://github.com/curkan/go-tickets/releases/download/v2.6.0/gotickets_Linux_x86_64.tar.gz"
+        sha256 "457ddba954cc7844aff3d9a5b57b8c9df6cc5b8c9c2d05011a8ba5429c2ff0af"
 
         def install
           bin.install "gotickets"
@@ -39,8 +39,8 @@ class Gotickets < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/curkan/go-tickets/releases/download/v2.5.2/gotickets_Linux_arm64.tar.gz"
-        sha256 "7c7601410c9f839098eefe7e19db331156a16ee0c50349fead08dc9c0e373db3"
+        url "https://github.com/curkan/go-tickets/releases/download/v2.6.0/gotickets_Linux_arm64.tar.gz"
+        sha256 "df6edbce18dd08da7fae6e52814b320c49421696282677742bffb8c57956c06d"
 
         def install
           bin.install "gotickets"
